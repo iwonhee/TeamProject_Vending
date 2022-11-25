@@ -13,21 +13,20 @@
         android:text="자판기 테스트"
         android:textAlignment="center"
         android:textSize="24dp"/>
-
+    <!--콜라, 사이다-->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
+        android:layout_gravity="center_horizontal"
+
         >
         <!-- 콜라 -->
         <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginRight="50dp"
             >
             <ImageView
                 android:layout_width="100dp"
@@ -35,23 +34,26 @@
                 android:background="@color/black"
                 />
             <TextView
+                android:id="@+id/coke_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="800원"
+                android:text="800"
                 android:textAlignment="center"
                 />
             <TextView
+                android:id="@+id/coke_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="콜라"
+                android:text="coke"
                 android:textAlignment="center"
                 />
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="재고 : "
                     android:textAlignment="center"
@@ -66,17 +68,17 @@
 
             <Button
                 android:id="@+id/btn_c"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="구매하기"
                 />
         </LinearLayout>
         <!-- 사이다 -->
         <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginLeft="50dp"
             >
             <ImageView
                 android:layout_width="100dp"
@@ -84,15 +86,17 @@
                 android:background="@color/black"
                 />
             <TextView
+                android:id="@+id/saida_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="800원"
+                android:text="800"
                 android:textAlignment="center"
                 />
             <TextView
+                android:id="@+id/saida_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="사이다"
+                android:text="saida"
                 android:textAlignment="center"
                 />
             <LinearLayout
@@ -114,7 +118,118 @@
             </LinearLayout>
             <Button
                 android:id="@+id/btn_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="구매하기"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!--환타, 데미소다-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        >
+        <!-- 콜라 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/black"
+                />
+            <TextView
+                android:id="@+id/fanta_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="700"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/fanta_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fanta"
+                android:textAlignment="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="재고 : "
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/fanta_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="구매하기"
+                />
+        </LinearLayout>
+        <!-- 사이다 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/black"
+                />
+            <TextView
+                android:id="@+id/demisoda_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="700"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/demisoda_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="demisoda"
+                android:textAlignment="center"
+                />
+            <LinearLayout
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="재고 : "
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/demisoda_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_d"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="구매하기"
                 />
@@ -124,8 +239,7 @@
     <!-- 금액 입력 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         >
 
@@ -133,24 +247,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
             >
             <EditText
                 android:id="@+id/inputMoney"
-                android:layout_width="300dp"
+                android:layout_weight="7"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="금액을 입력하세요"
                 />
             <Button
                 android:id="@+id/btn_charge"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="금액 입력"
                 />
         </LinearLayout>
+
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -167,13 +285,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_weight="0.5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        >
-
         <Button
             android:id="@+id/btn_rtn"
             android:layout_width="match_parent"
@@ -181,6 +292,5 @@
             android:text="잔돈 반환"
            />
 
-    </LinearLayout>
 
 </LinearLayout>

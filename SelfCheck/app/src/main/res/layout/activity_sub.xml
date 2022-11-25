@@ -25,6 +25,19 @@
         android:textAlignment="center"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문 음료 목록"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/order_cnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        />
+
 
 
 
