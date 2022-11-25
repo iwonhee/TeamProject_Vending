@@ -17,6 +17,6 @@ public class ResultActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         ArrayList<DrinkDTO> drink_list = (ArrayList<DrinkDTO>)intent.getSerializableExtra("drink_list");
-        Log.d("로그", "값 : " + drink_list.size());
+        Log.d("로그", "값 : " + drink_list.size());  
     }
 }
