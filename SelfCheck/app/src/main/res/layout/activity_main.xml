@@ -29,9 +29,9 @@
             android:layout_marginRight="50dp"
             >
             <ImageView
+                android:src="@drawable/cocke_o"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@color/black"
                 />
             <TextView
                 android:id="@+id/coke_price"
@@ -81,9 +81,9 @@
             android:layout_marginLeft="50dp"
             >
             <ImageView
+                android:src="@drawable/soda_o"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@color/black"
                 />
             <TextView
                 android:id="@+id/saida_price"
@@ -140,9 +140,9 @@
             android:layout_marginRight="50dp"
             >
             <ImageView
+                android:src="@drawable/fanta_o"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@color/black"
                 />
             <TextView
                 android:id="@+id/fanta_price"
@@ -192,9 +192,9 @@
             android:layout_marginLeft="50dp"
             >
             <ImageView
+                android:src="@drawable/demi"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@color/black"
                 />
             <TextView
                 android:id="@+id/demisoda_price"

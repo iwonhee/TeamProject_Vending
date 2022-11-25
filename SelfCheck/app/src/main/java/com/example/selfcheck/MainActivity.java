@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                     int c = Integer.parseInt(String.valueOf(coke_cnt.getText())); //현재 콜라 재고//현재 콜라 재고
 
                     if( m < coke.getPrice() || c == 0){
-                        Toast.makeText(MainActivity.this, "재고 부족", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "오류 (잔액, 재고 확인)", Toast.LENGTH_SHORT).show();
                     }else{
                         int rm = m - coke.getPrice();
                         tv_money.setText(String.valueOf(rm));
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                     int m = Integer.parseInt(String.valueOf(tv_money.getText())); //현재 잔액
                     int c = Integer.parseInt(String.valueOf(saida_cnt.getText())); //현재 콜라 재고
                     if( m < saida.getPrice() || c == 0){
-                        Toast.makeText(MainActivity.this, "재고 부족", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "오류 (잔액, 재고 확인)", Toast.LENGTH_SHORT).show();
                     }else{
                         int rm = m - saida.getPrice();
                         tv_money.setText(String.valueOf(rm));
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
                     int m = Integer.parseInt(String.valueOf(tv_money.getText())); //현재 잔액
                     int c = Integer.parseInt(String.valueOf(fanta_cnt.getText())); //현재 콜라 재고
                     if( m < fanta.getPrice() || c == 0){
-                        Toast.makeText(MainActivity.this, "재고 부족", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "오류 (잔액, 재고 확인)", Toast.LENGTH_SHORT).show();
                     }else{
                         int rm = m - fanta.getPrice();
                         tv_money.setText(String.valueOf(rm));
