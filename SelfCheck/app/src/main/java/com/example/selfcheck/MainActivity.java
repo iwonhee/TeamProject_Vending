@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         coke_cnt = findViewById(R.id.coke_cnt);     //콜라 남은수량
         saida_cnt = findViewById(R.id.saida_cnt);   //사이다 남은수량
 
-        Intent intent = new Intent(MainActivity.this, DrinkDAO.class);
+        Intent intent = new Intent(MainActivity.this, DrinkDTO.class);
         intent.putExtra("coke", coke);
         intent.putExtra("saida", saida);
 
@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("log", "onClick: "+buyCokeCnt);
 //                        Intent intent1 = new Intent(MainActivity.this, SubActivity.class);
                         intent.putExtra("buyCokeCnt", buyCokeCnt);  // 몇 개 샀는지를 SubActivity 에 넘겨주기
+
                     }
                 }catch (Exception e){
                     Toast.makeText(MainActivity.this, "오류발생", Toast.LENGTH_SHORT).show();
