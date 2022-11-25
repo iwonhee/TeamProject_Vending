@@ -33,6 +33,7 @@ public class SubActivity extends AppCompatActivity {
         Log.d("log", "fantaCnt : " + fantaCnt);
         Log.d("log", "demisodaCnt : " + demisodaCnt);
         balance.setText("잔액 : "+ibal);
+<<<<<<< HEAD
         
         if(cokeCnt > 0){
             order_cnt.append("콜라"+cokeCnt+"개\t" );
@@ -46,6 +47,19 @@ public class SubActivity extends AppCompatActivity {
         if(demisodaCnt > 0){
             order_cnt.append("데미소다"+demisodaCnt+"개\t");
         }
+=======
+//        tv_buyCoke.setText("콜라 "+cokeCnt);
+//        tv_buySaida.setText("사이다 "+saidaCnt);
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(SubActivity.this, MainActivity.class);
+                startActivity(intent1);
+            }
+        });
+        // sefsef
+>>>>>>> wonhee
 
     }
 }
