@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-AAAAA
-BBBBB
-new branch 2
-123sss
-=======
-wonhee1
->>>>>>> 6935df19558d2b6b3db827f339d04ee56bf8a7e6
